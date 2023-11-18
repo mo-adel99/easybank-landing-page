@@ -1,0 +1,8 @@
+@use "../utilities/all" as *;
+
+a.custom-btn {
+  color: $White;
+  padding: 10px 35px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
+}

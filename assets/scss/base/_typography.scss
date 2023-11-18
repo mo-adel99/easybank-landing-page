@@ -1,0 +1,13 @@
+@use "../utilities/all" as *;
+
+body {
+  font-family: $font;
+}
+
+h1,h2,h3,h4,h5 {
+  color: $Dark-Blue;
+}
+
+p {
+  color: $Grayish-Blue;
+}

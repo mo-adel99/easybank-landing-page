@@ -1,0 +1,9 @@
+@use "../utilities/all" as *;
+
+.container {
+  padding-inline: 6rem;
+
+  @include view-below(sm) {
+    padding-inline: 1.4rem;
+  }
+}

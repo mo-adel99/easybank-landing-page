@@ -1,0 +1,64 @@
+@use "../utilities/all" as *;
+
+.articles {
+  background-color: $Very-Light-Gray;
+
+  .container {
+    padding-block: 4.6rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+
+    @include view-below(sm) {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+  .row {
+    gap: 2rem;
+    margin-inline: 0;
+
+    @include view-below(sm) {
+      flex-direction: column;
+      padding-inline: .3rem;
+    }
+
+    & > * {
+      flex: 1;
+    }
+
+    .card {
+      padding: 0;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+      }
+
+      &-text {
+        padding: 1rem 1.6rem 1rem;
+      }
+      
+      .author {
+        font-size: .7rem;
+        margin-top: 1rem;
+        margin-bottom: .6rem;
+      }
+
+      h3 {
+        font-size: .9rem;
+        width: 80%;
+      }
+
+      .brief {
+        font-size: .78rem;
+      }
+    }
+  }
+}

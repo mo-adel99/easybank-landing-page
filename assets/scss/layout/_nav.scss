@@ -1,0 +1,52 @@
+@use "../utilities/all" as *;
+
+nav {
+  background-color: $White;
+  padding-block: 0 !important;
+
+  @include view-below(sm) {
+    padding-block: 1rem !important;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    gap: 2.6rem;
+    
+    @include view-below(sm) {
+      gap: .5rem; 
+    }
+
+    .nav-item {
+      padding-block: 1.3rem !important;
+      border-bottom: 4px solid $White;
+
+      &:hover {
+        border-bottom: 4px solid $Lime-Green;
+      }
+
+      &:hover .nav-link {
+        color: $Dark-Blue;
+      }
+    }
+
+    .nav-link {
+      padding: 0 !important;
+      color: $Grayish-Blue;
+      font-weight: 500;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    span {
+      background-image: url("../images/icon-hamburger.svg") !important;
+    }
+  }
+}
